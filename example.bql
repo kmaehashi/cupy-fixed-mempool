@@ -1,0 +1,5 @@
+CREATE STATE fixed_mempool TYPE pystate WITH
+    module_path = ".",
+    module_name = "fixed_mempool",
+    class_name = "FixedSizeMemoryPoolState",
+    max_size = 1073741824;  -- 1 GiB (1024^3)
